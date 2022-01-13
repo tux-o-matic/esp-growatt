@@ -431,7 +431,7 @@ void CreateGelfJson(JsonDocument& gelfJsonDoc)
   }
   
   gelfJsonDoc["_DcVoltage_double"] = Inverter.GetDcVoltage();
-  gelfJsonDoc["_AcFreq_int"] = Inverter.GetAcFrequency();
+  gelfJsonDoc["_AcFreq_double"] = Inverter.GetAcFrequency();
   gelfJsonDoc["_AcVoltage_double"] = Inverter.GetAcVoltage();
   gelfJsonDoc["_AcPower_double"] = Inverter.GetAcPower();
   gelfJsonDoc["_EnergyToday_double"] = Inverter.GetEnergyToday();
@@ -443,7 +443,7 @@ void CreateGelfJson(JsonDocument& gelfJsonDoc)
   #warning simulating the inverter
   gelfJsonDoc["short_message"] =  "Normal";
   gelfJsonDoc["_DcVoltage_double"] = 70.5;
-  gelfJsonDoc["_AcFreq_int"] = 50.00;
+  gelfJsonDoc["_AcFreq_double"] = 50.00;
   gelfJsonDoc["_AcVoltage_double"] = 230.0;
   gelfJsonDoc["_AcPower_double"] = 0.00;
   gelfJsonDoc["_EnergyToday_double"] = 0.3;
