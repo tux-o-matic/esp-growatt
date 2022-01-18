@@ -1,32 +1,3 @@
-/*
-"http://arduino.esp8266.com/stable/package_esp8266com_index.json"
-ESP8266
-
-Used Libs
-----------
-
-Download ModbusMaster by Doc Walker
-Download ArduinoJson by Arduino group
-
-Board: Generic ESP8266 Module
-Flash Mode: DIO
-Cristal Freq:: 26 MHz
-Flash Freq: 40 MHz
-Upload Using: Serial
-CPU Freq: 80 MHz
-Flash Size: 4 MB (FS:none OTA~1019KB)
-UploadSpeed: 115200
-
-Based on the work of https://github.com/otti/Growatt_ShineWiFi-S
-Which is itself based on the work by Jethro Kairys
-https://github.com/jkairys/growatt-esp8266
-
-*/
-
-// ---------------------------------------------------------------
-// User configuration area start
-// ---------------------------------------------------------------
-
 // Setting this define to 1 will ping the default gateway periodically 
 // if the ping is not successful, the wifi connection will be reestablished
 #define PINGER_SUPPORTED 1
@@ -34,7 +5,6 @@ https://github.com/jkairys/growatt-esp8266
 // Setting this define to 1 will enable the debug output via the serial port.
 // The serial port is the same used for the communication to the inverter.
 // Enabling this feature can cause problems with the inverter communication!
-// For ShineWiFi-S everything seems to work perfect even though this flag is set
 #define ENABLE_DEBUG_OUTPUT 0
 
 // Setting this define to 1 will enable a web page (<ip>/debug) where debug messages can be displayed
